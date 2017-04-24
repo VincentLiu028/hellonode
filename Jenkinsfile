@@ -30,7 +30,7 @@ node {
          * Pushing multiple tags is cheap, as all the layers are reused. */
         docker.withRegistry('http://139.217.12.139', 'habor-registry') {
             app.push("${env.BUILD_NUMBER}")
-            app.push("latest")
+            /*app.push("latest") */
         }
     }
 }
